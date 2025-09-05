@@ -139,3 +139,21 @@ li :hover {
     line-height: 1.75;
     margin: 0 0 16px;
 }
+
+.faixa_esq{
+    color: #475569;
+    font-size: 1vw;
+    line-height: 1.75;
+    margin: 0 0 16px;
+}
+
+.trajetoria {
+    display: flex;
+}
+
+.faixa_esquerda{
+    
+    width: 45%;
+    padding-top: 5%;
+    padding-left: 10%;
+}
