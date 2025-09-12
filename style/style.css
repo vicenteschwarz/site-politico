@@ -6,7 +6,7 @@
     font-family: "Arsenal", sans-serif;
 }
 
-ul {
+.menu ul {
     display: flex;
     list-style: none;
     justify-content: center;
@@ -56,11 +56,9 @@ li :hover {
 .texto_brasil {
     position: absolute;
     bottom: 50%;
-    left: 15%;
+    left: 21%;
     transform: translateX(-50%);
-    /* n entendi */
     color: white;
-    /* Cor do teto */
     font-size: 2vw;
     font-weight: bold;
 }
@@ -88,32 +86,31 @@ li :hover {
     color: #ffffff;
 }
 
-
 .about {
-    padding: 32px 20px;
+    margin-top: 3em;
+    padding: 48px 20px;
 }
 
 .about__section {
     max-width: 1100px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 360px 1fr;
-    /* foto | textos */
-    gap: 48px;
+    grid-template-columns: 320px 1fr;
+    gap: 100px;
     align-items: center;
-    margin-left: 30em;
 }
 
 .foto_candidato {
-    width: 80%;
-    height: 100%;
+    width: 20vw;
     display: block;
     object-fit: cover;
-    border-radius: 15px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    margin-left: 0;
 }
 
 .textos_laterais {
-    max-width: 50%;
+    max-width: 100%;
 }
 
 .deputado {
@@ -129,31 +126,280 @@ li :hover {
     color: #0f2a45;
     font-weight: 800;
     line-height: 1.1;
-    font-size: clamp(1vw, 2vw, 3vw);
-    margin: 0 0 16px;
+    font-size: clamp(22px, 2.2vw, 36px);
+    margin: 0 0 12px;
 }
 
 .texto_padrao {
     color: #475569;
-    font-size: 1vw;
-    line-height: 1.75;
-    margin: 0 0 16px;
+    font-size: clamp(14px, 1.2vw, 18px);
+    line-height: 1.60;
+    margin: 0;
 }
 
-.faixa_esq{
-    color: #475569;
-    font-size: 1vw;
-    line-height: 1.75;
-    margin: 0 0 16px;
+.infos {
+    margin: 3%;
+    margin-right: 10%;
+}
+
+.infos h1 {
+    font-weight: 700;
+    font-size: clamp(1vw, 2vw, 3vw);
+    margin-bottom: 2%;
+}
+
+.infos p {
+    font-size: 1.3vw;
+    line-height: 1.8;
 }
 
 .trajetoria {
     display: flex;
 }
 
-.faixa_esquerda{
-    
+.faixa_esq{
     width: 45%;
     padding-top: 5%;
     padding-left: 10%;
 }
+
+.accordeons {
+    width: 55%;
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+
+details {
+    width: 100%;
+    margin: 3%;
+    border: 2px solid #FF7B00;
+    border-radius: 8px;
+    background-color: #ff7b0035;
+    overflow: hidden;
+}
+
+summary {
+    cursor: pointer;
+    padding: 12px;
+    background-color: #FF7B00;
+    color: #112244;
+    font-weight: bold;
+    border-bottom: 1px solid #FF7B00;
+}
+
+summary:hover {
+    background-color: #112244;
+    color: #ffffff;
+}
+
+details p{
+    padding: 12px;
+    background-color: #fffaf5;
+    color: #000000;
+}
+
+.valores {
+    display: flex;
+    flex-direction: column;
+    background-color: #112244;
+    margin-top: 5%;
+    padding-top: 3%;
+    text-align: center;
+    align-items: center;
+}
+
+.valores h3 {
+    color: #FF7B00;
+    padding-bottom: 1%;
+}
+
+.valores h1 {
+    color: #ffffff;
+    font-size: 2.5vw;
+    padding-bottom: 2%;
+}
+
+.valores p {
+    color: #ffffff;
+    width: 80%;
+    font-size: 1.5vw;
+    line-height: 1.5;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  gap: 24px;
+  width: 80%;
+  margin: 3% auto;
+}
+
+.cards > div{
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+  display: flex;
+  flex-direction: column;
+  min-height: 240px;      
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+.cards > div:hover{
+  background-color: #FF7B00;
+  transform: translateY(-2px);
+  transition: .25s ease;
+}
+
+#card_icon{
+  width: 28px;
+  height: 28px;
+  margin-bottom: 12px;
+}
+
+#card_title{
+  color: #112244;
+  font-weight: 700;
+  line-height: 1.3;
+  font-size: clamp(18px, 1.4vw, 22px);
+  margin-bottom: 8px;
+}
+
+#card_paragraph{
+  color: #112244;
+  font-size: clamp(14px, 1.05vw, 16px);
+  line-height: 1.6;
+  justify-items: center;
+  margin-left: 2.5em ;
+}
+
+.cards > div:hover #card_title,
+.cards > div:hover #card_paragraph{
+  color: #112244;
+}
+
+@media (max-width: 1000px){
+  .cards{ grid-template-columns: repeat(2, minmax(260px, 1fr)); }
+}
+@media (max-width: 640px){
+  .cards{ grid-template-columns: 1fr; }
+}
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .about__section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+    .textos_laterais {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .nome {
+        margin-bottom: 8px;
+    }
+}
+
+/* mexendo no footer */
+
+.line {
+    height: 10px;
+    background-color: #FF7B00;
+}
+
+footer{
+    background-color:#e4eeff;
+}
+
+.footer_redes_sociais{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.footer_redes_sociais a img{
+    width: 70%;
+    margin-top:25%;
+    margin-bottom: 25%;
+    gap: 10px;
+}
+
+.footer_links{
+    width: 68%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%
+}
+
+.footer_links h3{
+    color: #112244;
+    font-size: 1.4vw;
+}
+
+.footer_links p{
+    color: #112244;
+}
+
+.footer_links ul{
+    display: block;
+    list-style: disc;
+    padding-left: 1.2em;
+    margin-left: .5em;
+}
+
+.footer_links li{
+    margin: .25em 0;
+}
+
+.footer_social{
+    margin-top: 2em;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.footer_social h3{
+    padding-top: 2%;
+}
+
+.footer_social p{
+    color:#112244;
+}
+
+.contato h3{
+
+}
+
+.cop{
+    margin-bottom: 2em; 
+}
+/*
+
+#contato{
+    color:#112244;
+    margin-top: 1em;
+}
+
+#contato li{
+    display: flex;
+    color: #112244;
+}
+
+#temas{
+    color:#112244;
+    margin-top: 1em;
+}
+
+#temas li{
+    display: flex;
+    color: #112244;
+}
+
+*/
