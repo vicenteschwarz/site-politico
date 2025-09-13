@@ -403,3 +403,168 @@ footer{
 }
 
 */
+
+/* media query 425*/
+
+@media (max-width:425px) {
+    .foto_candidato {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .deputado{
+    font-size: 3vw;
+  }
+
+  .paisagem{
+    width: 160%;
+  }
+
+  .texto_brasil{
+    font-size: 8vw;
+    bottom: 25%;
+    left: 38%;
+  }
+
+  .buttons{
+    bottom: -45%;
+    left: 10%;
+  }
+
+  .logo{
+    padding-left: 08%;
+    margin-top: 1em;
+    left: 30%;
+    width: 20%;
+    height: 30%;
+  }
+
+  .menu {
+    height: 150px;
+    margin-top: 0;
+    background-color: #122244;
+}
+
+  .menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 1em;
+    gap: 10px;
+}
+
+a {
+    font-weight: 400;
+    font-size: 5vw;
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.trajetoria {
+    flex-direction: column;   /* empilha os elementos */
+  }
+
+  .faixa_esq, 
+  .accordeons {
+    width: 100%;              /* cada bloco ocupa toda a largura */
+    padding: 0 1em;           /* ajuste de padding lateral */
+  }
+
+  .accordeons {
+    margin-top: 1.5em;        /* espaço entre texto e acordeons */
+    padding-bottom: 1em;
+  }
+
+.accordeons {
+    width: 78%;
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+
+details {
+    width: 110%;
+    margin: 3%;
+    border: 2px solid #FF7B00;
+    border-radius: 8px;
+    background-color: #ff7b0035;
+    overflow: hidden;
+}
+
+.valores {
+    display: flex;
+    flex-direction: column;
+    background-color: #112244;
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    align-items: center;
+}
+
+.valores h3 {
+    color: #FF7B00;
+    padding-bottom: 1%;
+    font-size: 8vw;
+}
+
+.valores h1 {
+    color: #ffffff;
+    font-size: 5vw;
+    padding-bottom: 2%;
+}
+
+.valores p {
+    color: #ffffff;
+    width: 80%;
+    font-size: 4vw;
+    line-height: 1.5;
+    padding-bottom: 6%;
+}
+
+.infos h1 {
+    font-weight: 700;
+    font-size: clamp(1vw, 2vw, 3vw);
+    margin-bottom: 2%;
+}
+
+.infos p {
+    font-size: 1.3vw;
+    line-height: 1.8;
+}
+
+/*tentando arrumar os textos antes do accordeon*/
+
+/* Força os mesmos estilos nos textos dentro da .faixa_esq */
+.faixa_esq .deputado{
+  color: #f59e0b;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: .08em;
+  /* mesma escala da classe global */
+  font-size: clamp(12px, 0.9vw, 14px);
+  margin: 0 0 6px;
+  padding-left: 33%;
+}
+
+.faixa_esq .nome{
+  color: #0f2a45;
+  font-weight: 800;
+  line-height: 1.1;
+  font-size: clamp(22px, 2.2vw, 36px);
+  margin: 0 0 12px;
+  padding-left: 33%;
+}
+
+.faixa_esq .texto_padrao{
+  color: #475569;
+  font-size: clamp(14px, 1.2vw, 18px);
+  line-height: 1.6;
+  margin: 0;
+  padding-right: 10%;
+  padding-left: 02%;
+}
+
+
+}
